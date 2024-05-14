@@ -21,7 +21,32 @@ app.get('/', function (req, res) {
 
 // your first API endpoint...
 app.get('/api/hello', function (req, res) {
-  res.json({ greeting: 'hello API' });
+  res.json({ greeting: 'Hellow World, hello API' });
+});
+
+// API endpoint for user info
+/*result in JSON format
+1. IP address 
+2. preferred language
+3. software */
+
+//get user header
+app.get('/api/whoami', (req, res) => {
+  //reset result
+  let result = {
+    "ipaddress": "error",
+    "language": "error",
+    "software": "error"
+  };
+
+  //get from header
+  result.ipaddress = req.ip;
+  result.language = req.headers["accept-language"];
+  result.software = req.headers["user-agent"];
+
+  //result in JSON format
+  console.log("result: " + JSON.stringify(result));
+  return res.json(result);
 });
 
 // listen for requests :)

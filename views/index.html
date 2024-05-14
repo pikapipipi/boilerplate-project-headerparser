@@ -2,33 +2,67 @@
 
 <html>
 
-   <head>
-      <title>Request Header Parser</title>
-      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
-      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-      <link href="style.css" rel="stylesheet" type="text/css">
-   </head>
+<head>
+  <title>Request Header Parser</title>
+  <link rel="shortcut icon"
+    href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico"
+    type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
 
-   <body>
-      <div class="container">
-        <h1>Request Header Parser Microservice</h1>
+<body>
+  <main>
+    <h2>Request Header Parser Microservice</h2>
+    Request to <b><i>/api/whoami</i></b> will return a JSON object with user 1) IP address, 2) preferred language and
+    3)software.
 
-        <h2>Example Usage:</h2>
-        <p>
-          <a href="api/whoami">[base url]/api/whoami</a>
-        </p>
+    <br><br>
 
-        <h2>Example Output:</h2>
-        <p>
-          <code>{"ipaddress":"::ffff:159.20.14.100","language":"en-US,en;q=0.5",<br>"software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}</code>
-        </p>
+    <div class="outlinediv">
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Example Usage:</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a href="api/whoami">[project url]/api/whoami</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Example Output:</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                {"ipaddress":"::ffff:159.20.14.100","language":"en-US,en;q=0.5",<br>"software":"Mozilla/5.0 (X11;
+                Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="footer">
-        <p>
-          by <a href="https://www.freecodecamp.org">freeCodeCamp</a>
-        </p>
-      </div>
-   </body>
+    </div>
+  </main>
 
+  <p> Source code <a href="https://github.com/pikapipipi/boilerplate-project-headerparser">HERE</a> by <a
+      href="https://pikapipipi.github.io/">pikapipipi</a>
+  </p>
+
+  <p>
+    This is a self-learning mini-project from <a
+      href="https://www.freecodecamp.org/learn/back-end-development-and-apis/back-end-development-and-apis-projects/request-header-parser-microservice">freeCodeCamp.org</a>
+  </p>
+</body>
 
 </html>
