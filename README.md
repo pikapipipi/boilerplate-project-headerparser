@@ -10,5 +10,5 @@ Please go to the glitch page \
 https://pikapipipi-request-header-parser-microservice.glitch.me/
 \
 \
-Valid date request to /api/:date? will return a JSON object with Unix timestamp and date and time in UTC.\
+ Request to /api/whoami will return a JSON object with user 1) IP address, 2) preferred language and 3)software.
 e.g. https://pikapipipi-request-header-parser-microservice.glitch.me/api/whoami
